@@ -21,9 +21,6 @@ README
    python3 -m venv env
    source env/bin/activate
    pip install -r requirements.txt # Copied from the NeMo Framework Container earlier
-   # This is needed to use 23.11 and python3.11, which is what is present on
-   # Debian 12
-   pip install -U hydra-core
    ```
 
 3. Run an example NeMo Framework Pre-Training
@@ -43,7 +40,7 @@ README
        stages=[training] \
        training=gpt3/5b \
        env_vars.TRANSFORMERS_OFFLINE=0 \
-       container=../nemofw+tcpxo-23.11.sqsh \
+       container=../nemofw+tcpxo-24.07.sqsh \
        container_mounts='["/var/lib/tcpxo/lib64"]' \
        cluster.srun_args=["--container-writable"] \
        training.model.data.data_impl=mock \
