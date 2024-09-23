@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ARG NEMOFW_VERSION=24.07
-FROM nvcr.io/nvidia/nemo:${NEMOFW_VERSION}.framework
+FROM nvcr.io/nvidia/nemo:${NEMOFW_VERSION}
 
 ENV NCCL_FASTRAK_CTRL_DEV=enp0s12
 ENV NCCL_FASTRAK_IFNAME=enp6s0,enp7s0,enp13s0,enp14s0,enp134s0,enp135s0,enp141s0,enp142s0
