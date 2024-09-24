@@ -30,8 +30,7 @@ README
 
    ```shell
    cd launcher_scripts
-   mkdir data
-
+   
    MAX_STEPS=10
    NUM_NODES=8
 
