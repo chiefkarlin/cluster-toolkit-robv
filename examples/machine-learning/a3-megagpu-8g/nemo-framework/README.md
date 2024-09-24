@@ -21,6 +21,9 @@ README
    python3 -m venv env
    source env/bin/activate
    pip install -r requirements.txt # Copied from the NeMo Framework Container earlier
+    # This is needed to use 23.11 and python3.11, which is what is present on
+   # Debian 12
+   pip install -U hydra-core
    ```
 
 3. Run an example NeMo Framework Pre-Training
