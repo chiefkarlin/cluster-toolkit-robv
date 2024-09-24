@@ -27,4 +27,4 @@ srun enroot import dockerd://nemofw:tcpxo-"${NEMOFW_VERSION}"
 srun \
 	--container-mounts="${PWD}":/workspace/mount_dir,/var/tmp:/var/tmp \
 	--container-image=./nemofw+tcpxo-"${NEMOFW_VERSION}".sqsh \
-	bash -c "cp -r /opt/NeMo-Megatron-Launcher/requirements.txt /opt/NeMo-Megatron-Launcher/launcher_scripts /opt/NeMo-Megatron-Launcher/auto_configurator /workspace/mount_dir/"
+	bash -c "cp -r /opt/NeMo-Framework-Launcher/requirements.txt /opt/NeMo-Framework-Launcher/launcher_scripts /opt/NeMo-Framework-Launcher/auto_configurator /workspace/mount_dir/"
